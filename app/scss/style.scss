@@ -1,0 +1,160 @@
+@import 'vars';
+@import 'global';
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.form-main {
+    background: url(../img/bg.png) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .main-wrapper {
+        padding: 25px 30px 50px 30px;
+        border-radius: 30px;
+        width: 560px;
+        background: rgba(255, 255, 255, 0.60);
+        @media screen and (max-width: 991px) {
+            width: 70%;
+        }
+        @media screen and (max-width: 767px) {
+            width: 90%;
+        }
+        .form-head {
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: 600;
+            text-align: center;
+            margin: 0 0 25px;
+            color: #0048D4;
+            font-family: Montserrat;
+            text-transform: capitalize;
+        }
+        .form-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+            color: rgba(116, 116, 116, 0.80);
+            font-family: Montserrat;
+            font-size: 20px;
+            font-weight: 400;
+            .form-card {
+                position: relative;
+                width: 100%;
+                .form-input,
+                .form-textarea {
+                    padding: 20px 25px 15px;
+                    width: 100%;
+                    border-radius: 55px;
+                    background: rgba(255, 255, 255, 0.80);
+                    outline: none;
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-weight: 400;
+                    box-sizing: border-box;
+                    outline: none;
+                    border: none;
+                    color: #4C4C4C;
+                    &:valid,
+                    &:focus {}
+                    &:valid~.form-label,
+                    &:focus~.form-label {
+                        top: 30%;
+                        transform: translateY(-70%);
+                        font-size: 12px;
+                        line-height: 23px;
+                    }
+                    &:-webkit-autofill,
+                    &:-webkit-autofill:hover,
+                    &:-webkit-autofill:focus,
+                    &:-webkit-autofill:active {
+                        transition: background-color 9999s ease-in-out 0s;
+                    }
+                    &::-webkit-outer-spin-button,
+                    &::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+                }
+                .form-label,
+                .form-textarea-label {
+                    position: absolute;
+                    left: 25px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    pointer-events: none;
+                    transition: 0.3s;
+                    margin: 0;
+                    font-size: 18px;
+                    line-height: 28px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0 0;
+}
+
+.btn-wrap button {
+    width: 200px;
+    height: 50px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 55px;
+    background: #FF1A1A;
+    cursor: pointer;
+}
+
+.icons img {
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.icons {
+    display: none;
+}
+
+.sigma-logo {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.sigma-logo img {
+    width: 100%;
+    padding: 10px;
+}
+
+.footer-logo {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-logo img {
+    width: 100%;
+    padding: 10px;
+}
+
+@import '_media';

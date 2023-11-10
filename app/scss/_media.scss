@@ -1,0 +1,25 @@
+@media (max-width: 430px) {
+    .form-main .main-wrapper {
+        padding: 25px 15px 50px 15px;
+    }
+    .form-main .main-wrapper .form-wrapper .form-card .form-label,
+    .form-main .main-wrapper .form-wrapper .form-card .form-textarea-label {
+        font-size: 15px;
+    }
+    .sigma-logo {
+        padding-top: 0px;
+    }
+    .footer-logo {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .logo img {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 350px) {
+    .form-main .main-wrapper {
+        padding: 25px 10px 50px 10px;
+    }
+}
